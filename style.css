@@ -1,0 +1,339 @@
+@font-face {
+   font-family: "Basis Grotesque Pro";
+   src: url("fonts/BasisGrotesquePro-Regular.woff2") format("woff2"),
+      url("fonts/BasisGrotesquePro-Regular.woff") format("woff"),
+      url("fonts/BasisGrotesquePro-Regular.ttf") format("ttf"),
+      url("fonts/BasisGrotesquePro-Regular.eot") format("eot");
+}
+
+@font-face {
+   font-family: "Basis Grotesque Pro";
+   src: url("fonts/BasisGrotesquePro-Light.woff2") format("woff2"),
+      url("fonts/BasisGrotesquePro-Light.woff") format("woff"),
+      url("fonts/BasisGrotesquePro-Light.ttf") format("ttf"),
+      url("fonts/BasisGrotesquePro-Light.eot") format("eot");
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: "Basis Grotesque Pro";
+   src: url("fonts/BasisGrotesquePro-Medium.woff2") format("woff2"),
+      url("fonts/BasisGrotesquePro-Medium.woff") format("woff"),
+      url("fonts/BasisGrotesquePro-Medium.ttf") format("ttf"),
+      url("fonts/BasisGrotesquePro-Medium.eot") format("eot");
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: "Basis Grotesque Pro";
+   src: url("fonts/BasisGrotesquePro-Bold.woff2") format("woff2"),
+      url("fonts/BasisGrotesquePro-Bold.woff") format("woff"),
+      url("fonts/BasisGrotesquePro-Bold.ttf") format("ttf"),
+      url("fonts/BasisGrotesquePro-Bold.eot") format("eot");
+   font-weight: 700;
+}
+
+body {
+   font-family: "Basis Grotesque Pro";
+   font-size: 16px;
+   line-height: 24px;
+   box-sizing: border-box;
+   margin: 0 auto;
+   letter-spacing: -0.03em;
+   min-width: 425px;
+}
+
+.container {
+   display: flex;
+   width: 100%;
+}
+
+@media (max-width:701px) {
+   .container {
+      flex-direction: column;
+   }
+}
+
+h2 {
+   font-size: 38px;
+   font-weight: 700;
+   line-height: 42px;
+   text-transform: uppercase;
+   padding-bottom: 9.5%;
+}
+
+@media (max-width: 900px) {
+   h2 {
+      font-size: 28px;
+      line-height: 28px;
+   }
+}
+
+.theme {
+   color: #0536FC;
+   text-transform: uppercase;
+   padding-bottom: 3%;
+   font-weight: 500;
+}
+
+.text {
+   opacity: 0.6;
+}
+
+.button {
+   text-decoration: none;
+   color: white;
+   background-color: #0536FC;
+   padding: 18px;
+   display: inline-block;
+   text-transform: uppercase;
+}
+
+
+.people {
+   width: 50%;
+
+}
+
+@media (max-width:701px) {
+   .people {
+      width: 100%;
+   }
+}
+
+.people h2 {
+   padding-bottom: 0;
+}
+
+.people .block {
+   padding: 15% 10% 15% 30%;
+}
+
+@media (max-width:701px) {
+   .people .block {
+      padding: 15%;
+   }
+}
+
+.school-pic {
+   background: url("images/school-pic.png");
+   background-size: cover;
+   width: 25%;
+}
+
+@media (max-width:701px) {
+   .school-pic {
+      width: 100%;
+      height: 700px;
+   }
+}
+
+.arrow {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   padding: 35px;
+}
+
+@media (max-width:900px) {
+   .arrow {
+      padding: 15px;
+   }
+}
+
+@media (max-width:701px) {
+   .arrow {
+      padding: 35px;
+   }
+}
+
+@media (max-width:900px) {
+   .arrow svg {
+      width: 15px;
+   }
+}
+
+@media (max-width:701px) {
+   .arrow svg {
+      width: 30px;
+   }
+}
+
+.block-2 {
+   padding: 17.76%;
+   width: 51%;
+}
+
+@media (max-width:710px) {
+   .block-2 {
+      padding: 15%;
+   }
+}
+
+.block-2 .number {
+   padding-bottom: 14%;
+   font-weight: 300;
+   opacity: 0.7;
+}
+
+h4 {
+   text-transform: uppercase;
+   padding-bottom: 52%;
+}
+
+@media (max-width:701px) {
+   h4 {
+      padding-bottom: 25%;
+   }
+}
+
+.area {
+   position: relative;
+   width: 25%;
+}
+
+@media (max-width:701px) {
+   .area {
+      width: 100%;
+   }
+}
+
+.participants-pic {
+   width: 25%;
+   background: url("images/participants-pic.png");
+   background-size: cover;
+}
+
+@media (max-width:701px) {
+   .participants-pic {
+      width: 100%;
+      height: 445px;
+   }
+}
+
+.partners-pic {
+   width: 25%;
+   background: url("images/partners-pic.png");
+   background-size: cover;
+}
+
+@media (max-width:701px) {
+   .partners-pic {
+      width: 100%;
+      height: 700px;
+   }
+}
+
+.area:hover {
+   background: #0536FC;
+}
+
+.area:hover .number {
+   color: white;
+}
+
+.area:hover .name {
+   color: white;
+}
+
+.area:hover .text {
+   color: white;
+}
+
+.area:hover .arrow {
+   background-color: white;
+   color: #0536FC;
+}
+
+.together {
+   width: 50%;
+   opacity: 0.35;
+}
+
+@media (max-width:701px) {
+   .together {
+      width: 100%;
+   }
+}
+
+.together .block-3 {
+   padding: 25%;
+}
+
+@media (max-width:701px) {
+   .together .block-3 {
+      padding: 15%;
+      padding-bottom: 5%;
+   }
+}
+
+.issue {
+   width: 50%;
+}
+
+@media (max-width:701px) {
+   .issue {
+      width: 100%;
+   }
+}
+
+.issue .block {
+   width: 65%;
+   padding-left: 17.76%;
+   padding-top: 14%;
+   padding-bottom: 10%;
+}
+
+@media (max-width:710px) {
+   .issue .block {
+      padding: 15%;
+      padding-bottom: 8%;
+   }
+}
+
+.issue .text {
+   width: 80%;
+}
+
+.statistic {
+   font-weight: 500;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+@media (max-width:701px) {
+   .statistic {
+      flex-direction: column;
+   }
+}
+
+@media (max-width:1262px) {
+   .statistic div {
+      width: 27%;
+   }
+}
+
+@media (max-width:701px) {
+   .statistic div {
+      width: 80%;
+      padding-left: 15%;
+   }
+}
+
+.total {
+   font-size: 100px;
+}
+
+.statistic svg {
+   padding-right: 35px;
+}
+
+.statistic .teach svg {
+   padding-right: 10px;
+}
+
+@media (max-width:900px) {
+   .total {
+      font-size: 70px;
+   }
+}
